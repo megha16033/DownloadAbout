@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     tools:context=".MainActivity"
+    android:background="#38AFA9">
+
+
+<TextView android:text="Download File" android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_marginBottom="30dp"
+        android:padding="10dp"
+        android:textSize="20sp"
+        android:id="@+id/heading"
+        android:background="#ffffff"
+        android:textColor="#38AFA9"
+        android:textStyle="bold|italic" />
+
+    <Button
+        android:background="#ffffff"
+        android:id="@+id/download"
+        android:layout_below="@+id/heading"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:onClick="onDownload"
+        android:text="Download"
+        android:textColor="#38AFA9"
+        android:layout_centerHorizontal="true"/>
+
+
+    <TextView android:text="" android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:id="@+id/data"
+        android:textColor="#ffffff"
+        android:layout_below="@+id/download"
+        android:scrollbars="vertical"
+        />
+
+
+
+</RelativeLayout>
